@@ -1,0 +1,57 @@
+{{ section:post_meta }}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@virajkhatavkar">
+<meta name="twitter:title" content="{{ social_title }}">
+<meta name="twitter:description" content="{{ social_description }}">
+<meta name="twitter:image" content="{{ path src=social_image }}">
+<meta name="twitter:creator" content="@virajkhatavkar">
+
+<meta property="og:description" content="{{ social_description }}">
+<meta property="og:image" content="{{ path src=social_image }}">
+<meta property="og:image:height" content="420">
+<meta property="og:image:width" content="840">
+<meta property="og:site_name" content="Viraj Khatavkar's Blog">
+<meta property="og:title" content="{{ social_title }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ current_url }}">
+{{ /section:post_meta }}
+
+<section class="regular">
+
+	<header>
+		<div class="meta clearfix">
+			<div class="author">
+				<img src="/assets/headshot.jpg" class="img-circle" width="48" height="48">
+				<div class="pull-left">
+					<a href="" class="name">{{ author_name }}</a>
+					<span class="length">{{ content | read_time }} minute read</span>
+				</div>
+			</div>
+			<div class="date">
+				{{ date format="F j, Y" }}
+			</div>
+		</div>
+		<h1>{{ title }}</h1>
+		{{ sub_title wrap="h2" }}
+	</header>
+
+	<article class="content">
+
+		{{ if intro_image }}
+			<p><img src="{{ intro_image }}" class="intro-image"></p>
+		{{ /if }}
+
+		{{ content }}
+
+		<ul class="tags">
+		{{ tags }}
+			<li><a href="{{ url }}">{{ title }}</a></li>
+		{{ /tags }}
+		</ul>
+
+		<h6>Comments: <em>I'm </em> <a href="https://twitter.com/virajkhatavkar">@virajkhatavkar</a> on Twitter</h6>
+	</article>
+
+</section>
+
+{{ partial:article-footer }}

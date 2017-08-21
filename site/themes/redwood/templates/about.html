@@ -1,0 +1,18 @@
+<section class="regular">
+
+	<header>
+		<h1 class="centered">{{ title }}</h1>
+		{{ sub_title wrap="h2" }}
+	</header>
+
+	<div class="centered">
+		<img src="/assets/headshot.jpg" class="img-circle">
+	</div>
+	<hr />
+	<article class="content">
+		{{ content }}
+		<h2>Fun Facts</h2>
+		{{ fun_facts | ul }}
+	</article>
+
+</section>

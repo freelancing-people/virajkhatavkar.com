@@ -1,0 +1,6 @@
+app_key: qpVaUL56fNo8rK6CfjDe5xYodDTWUUVx
+locales:
+  en:
+    full: en_US
+    name: English
+    url: http://statamic.dev/

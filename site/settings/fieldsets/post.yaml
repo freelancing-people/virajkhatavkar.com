@@ -1,0 +1,43 @@
+title: Blog Post
+hide: true
+taxonomies:
+  tags: true
+fields:
+  title:
+    type: title
+    display: Title
+    localizable: true
+  sub_title:
+    type: textarea
+    display: Subtitle
+    localizable: true
+  intro_image:
+    type: assets
+    display: Intro Image
+    container: main
+    folder: img
+    max_files: 1
+  hero_image:
+    type: assets
+    display: Hero Image
+    container: main
+    folder: img
+    max_files: 1
+  content:
+    type: markdown
+    display: Content
+    localizable: true
+  social_title:
+    type: text
+    display: Title for social sharing
+    validate: required
+  social_description:
+    type: textarea
+    display: Description for social sharing
+    validate: required
+  social_image:
+    type: assets
+    display: Image for social sharing
+    container: main
+    folder: /
+    max_files: 1
