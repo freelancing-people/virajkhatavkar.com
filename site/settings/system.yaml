@@ -1,6 +1,45 @@
-app_key: qpVaUL56fNo8rK6CfjDe5xYodDTWUUVx
+license_key: 6dc3ad35-099b-4ff4-8f32-b7cb6fd92011
 locales:
   en:
     full: en_US
     name: English
     url: https://virajkhatavkar.com/
+timezone: UTC
+date_format: F jS, Y
+default_extension: md
+filesystems:
+  content:
+    driver: local
+    root: site/content
+  storage:
+    driver: local
+    root: site/storage
+  users:
+    driver: local
+    root: site/users
+  themes:
+    driver: local
+    root: site/themes
+    url: /site/themes
+app_key: qpVaUL56fNo8rK6CfjDe5xYodDTWUUVx
+redactor:
+  - 
+    name: Standard
+    settings:
+      buttons:
+        - formatting
+        - bold
+        - italic
+        - link
+        - unorderedlist
+        - orderedlist
+        - html
+  - 
+    name: Basic
+    settings:
+      buttons:
+        - bold
+        - italic
+csrf_exclude: [ ]
+send_powered_by_header: true
+ensure_unique_ids: true
